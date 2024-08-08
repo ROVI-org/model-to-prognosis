@@ -1,0 +1,16 @@
+name: rovidemo
+channels:
+  - defaults
+  - conda-forge
+dependencies:
+  - python==3.10.*
+
+  # Basics
+  - tqdm
+  - matplotlib
+
+  - pip
+  - pip:
+    - battery-data-toolkit
+    - git+https://github.com/ROVI-org/auto-soh.git
+    - jupyterlab
